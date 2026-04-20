@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Contacto</h2>
+
+<form method="POST" class="mt-4">
+    <input class="form-control mb-3" type="text" name="nombre" placeholder="Nombre" required>
+    <input class="form-control mb-3" type="email" name="email" placeholder="Correo" required>
+    <select class="form-control mb-3" name="servicio">
+        <option>Desarrollo Web</option>
+        <option>Soporte Técnico</option>
+        <option>Redes y Seguridad</option>
+    </select>
+    <textarea class="form-control mb-3" name="mensaje" placeholder="Mensaje"></textarea>
+    <button class="btn btn-success">Enviar</button>
+</form>
+{% endblock %}
