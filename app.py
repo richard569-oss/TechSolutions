@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+import os
 
 app = Flask(__name__)
 
@@ -21,7 +22,6 @@ def contacto():
 
     return render_template('contacto.html')
 
-import os
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
